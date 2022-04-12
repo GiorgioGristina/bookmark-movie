@@ -1,0 +1,10 @@
+<h1><%= @list.name %></h1>
+
+<%= link_to 'back to lists', lists_path %>
+<%= link_to 'edit', edit_list_path %>
+<%= link_to 'delete', list_path(@list),
+                      method: :delete,
+                      data: {confirm: 'are you sure?'}%>
+
+
+<%# "creaated list controller with all the 7 crud action and added related views file plus a parcial _form for the action new and edit and the before action to keep the code DRY" %>
