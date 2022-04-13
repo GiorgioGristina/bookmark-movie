@@ -9,6 +9,7 @@
 <hr>
 <%= link_to 'add movie', new_list_bookmark_path(@list) %>
 
-<% @list.bookmarks.each do |bookmark| %>
-    <p><%= bookmark.movie.title %> <%= link_to 'delete', Bookmark_path %></p>
+<% @list.movies.each do |movie| %>
+    <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
+    <p><%= movie.title %> <%= link_to 'delete', bookmark_path(bookmark), method: :delete, data: {confirm: "are you sure you want to remove#{movie}"} %></p>
 <% end %>
