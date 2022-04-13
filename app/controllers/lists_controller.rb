@@ -22,11 +22,10 @@ class ListsController < ApplicationController
   end
 
   def edit
-    # @list = List.find(params[:id])
   end
 
   def update
-    # @list = List.find(params[:id])
+    
     @list.update(list_params)
     if @list.save
       redirect_to list_path(@list)
@@ -36,9 +35,9 @@ class ListsController < ApplicationController
   end
 
   def destroy
-    # @list = List.find(params[:id])
+    
     @list.destroy
-    redirect_to lists_path
+    redirect_to root_path
   end
 
   private
