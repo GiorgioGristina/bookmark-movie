@@ -1,5 +1,5 @@
 <h1><%= @list.name %></h1>
-
+<%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
 <%= link_to 'back to lists', lists_path %>
 <%= link_to 'edit', edit_list_path %>
 <%= link_to 'delete', list_path(@list),
