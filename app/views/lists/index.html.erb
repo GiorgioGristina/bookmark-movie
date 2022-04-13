@@ -2,7 +2,7 @@
 
 
 <% @lists.each do |list| %>
-  <div class="list-card">
+  <div class="list-card" style='background-image: url("<%= cl_image_path list.photo.key%>")'>
     <h2><%= list.name %></h2>  
   </div>
   

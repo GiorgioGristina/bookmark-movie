@@ -3,12 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url();
+  border: 1px black solid;
   width: 200px;
   height: 150px;
+  background-size: cover;
+  background-position: center;
 
   h2{
     font-weight: bold;
-    color: white;
+    color: orange;
   }
 }
