@@ -6,4 +6,9 @@
                       method: :delete,
                       data: {confirm: 'are you sure?'}%>
 
+<hr>
+<%= link_to 'add movie', new_list_bookmark_path(@list) %>
 
+<% @list.bookmarks.each do |bookmark| %>
+    <p><%= bookmark.movie.title %> <%= link_to 'delete', Bookmark_path %></p>
+<% end %>
