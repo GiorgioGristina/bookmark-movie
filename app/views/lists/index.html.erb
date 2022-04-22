@@ -1,9 +1,33 @@
-<h1>all lists</h1>
+<%= render 'shared/banner' %>
 
 
-<% @lists.each do |list| %>
-  <div class="list-card" style='background-image: url("<%= cl_image_path list.photo.key%>")'>
-    <h2><%= list.name %></h2>  
+
+<div class="container my-4 mx-auto">
+  <div class="header-container">
+    <h2>My Lists</h2>
+    <%= link_to 'Create new list', new_list_path, class: "create-btn"  %>
   </div>
-  
-<% end %>
+  <div class="row">
+    <% @lists.each do |list| %>
+      <div class="col-4">
+        <%= link_to list_path(list), class: "link-list" do %>
+          <div class="list-card" style='background-image: url("<%= cl_image_path list.photo.key%>")'>
+            
+            <h2><%= list.name %></h2>  
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+<div class="row">
+
+    <div class="col-6">
+    </div>
+
+    <div class="col-6">
+    </div>
+
+  </div>

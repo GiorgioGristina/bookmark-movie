@@ -14,7 +14,7 @@ url = "http://tmdb.lewagon.com/movie/top_rated?api_key=<your_api_key>"
 user_serialized = URI.open(url).read
 user = JSON.parse(user_serialized)
 
- hash = user['results'].first(10)
+hash = user['results'].first(10)
 
 puts 'deleting movie'
 Movie.destroy_all

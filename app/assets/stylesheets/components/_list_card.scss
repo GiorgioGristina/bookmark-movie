@@ -1,16 +1,22 @@
 .list-card{
-
+  
+  background-color: #b8c6db;
+  background-image: linear-gradient(360deg, #737476 0%, #c6c8cb 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px black solid;
-  width: 200px;
-  height: 150px;
+  width: 400px;
+  height: 200px;
   background-size: cover;
   background-position: center;
-
   h2{
+    text-decoration: none;
     font-weight: bold;
-    color: orange;
+    color: white;
   }
+}
+
+.link-list{
+  text-decoration: none;
 }
