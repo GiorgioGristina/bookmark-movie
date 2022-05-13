@@ -1,0 +1,31 @@
+.width-form{
+  width: 60%;
+  margin: 25px auto;
+}
+
+.border{
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  // background-color: gray;
+}
+
+
+.color-input{
+  border: black solid 1px;
+  border-radius: 30px;
+}
+
+.color-label{
+  color: black;
+  font-weight: bold;
+}
+
+.btn-submit{
+  color: white;
+  background-color: rgb(40, 40, 145);
+  border: 2px black solid;
+  border-radius: 30px;
+  padding: 4px 8px;
+  font-weight: bold;
+}

@@ -1,5 +1,9 @@
-<%= simple_form_for(list) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit %>
-<% end %>
+<div class='width-form border'>
+  
+    <%= simple_form_for(list)do |f| %>
+      <%= f.input :name, input_html: { class: "color-input"}, label_html: { class: "color-label"} %>
+      <%= f.input :photo, as: :file, input_html: { class: "color-input"}, label_html: { class: "color-label"} %>
+      <%= f.submit class: "btn-submit" %>
+    <% end %>
+  
+</div>
